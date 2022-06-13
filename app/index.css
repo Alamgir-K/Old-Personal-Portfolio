@@ -1,0 +1,83 @@
+#nav-container {
+    /* padding-left: 0px; */
+    padding-left: 0em;
+    /* margin-top: 2em;
+    margin-bottom: 1em; */
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#nav-icon {
+    /* width: 100px; */
+    width: 4em;
+}
+
+.nav-link {
+    /* font-size: 25px; */
+    font-size: 2em;
+    color: rgb(80, 200, 120);
+    font-weight: 800;
+}
+
+#analogue {
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.heading {
+    /* font-size: 40px; */
+    font-size: 2.5em;
+    color: rgb(80, 200, 120);
+    font-weight: 800;
+}
+
+.nav-active {
+    /* text-shadow: 10px 5px 0px yellow; */
+    text-shadow: 0.2em 0.1em 0em yellow;
+}
+
+.analogue-letter {
+    transition-property: color font-size text-shadow;
+    transition-duration: 1.0s;
+    /* text-shadow: 1px 1px 0px white; */
+    text-shadow: 0.2em 0.1em 0em white;
+    /* font-size: 40px; */
+    font-size: 2em;
+    color: rgb(80, 200, 120, 0.15);
+    font-weight: 800;
+}
+
+.analogue-letter-active {
+    transition-property: color font-size text-shadow;
+    transition-duration: 1.0s;
+    /* text-shadow: 10px 5px 0px yellow; */
+    text-shadow: 0.2em 0.1em 0em yellow;
+    /* font-size: 75px; */
+    font-size: 4.5em;
+    color: rgb(80, 200, 120);
+    font-weight: 800;
+}
+
+.nav-link {
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.img-fluid {
+    /* margin: 10px 10px 10px 10px; */
+    /* margin: 0.5em 0.1em 0.5em 0.1em; */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.album-grid {
+    margin-bottom: 5vh;
+}
