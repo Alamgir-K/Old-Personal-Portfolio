@@ -1,0 +1,13 @@
+.exp-bg {
+    background-image: url(../../assets/patternpad.jpeg);
+    background-size: contain;
+}
+
+.text-bg-success {
+    background-color: rgb(80, 200, 120);
+}
+
+#exp {
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+}
