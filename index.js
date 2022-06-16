@@ -10,27 +10,24 @@ analogueStrList = [analogueRowOneStr, analogueRowTwoStr, analogueRowThreeStr, an
 function createAnalogueDisplay() {
     const analogueSection = document.querySelector('#analogue');
     const analogueContainer = document.createElement('div');
-    analogueContainer.classList.add('container');
+    analogueContainer.classList.add('container-fluid', 'c-pad');
     let rowNum = 1;
     let columnNum = 1;
 
     for (row of analogueStrList) {
         const analogueRow = document.createElement('div');
-        analogueRow.classList.add('row');
+        analogueRow.classList.add('row', 'd-flex');
         const rowIdStr = `ar${rowNum}`
         analogueRow.id = rowIdStr;
 
         for (char of row) {
             const columnIdStr = `ac${columnNum}`
             const analogueColumn = document.createElement('div');
-            // analogueColumn.style.height = '100px';
-            analogueColumn.style.height = '5.5em';
-            analogueColumn.classList.add('col', 'd-flex', 'justify-content-center', 'align-items-center');
-            
+            analogueColumn.classList.add('col', 'd-flex', 'justify-content-center', 'align-items-center', 'analogue-col');
             
             analogueColumn.id = columnIdStr;
-            const letterHeading = document.createElement('span');
-            letterHeading.classList.add('display-4', 'analogue-letter', 'justify-content-center','align-items-center');
+            const letterHeading = document.createElement('p');
+            letterHeading.classList.add('analogue-letter');
             letterHeading.innerText = char;
 
             analogueColumn.appendChild(letterHeading);
@@ -44,6 +41,7 @@ function createAnalogueDisplay() {
 
     analogueSection.appendChild(analogueContainer);
 }
+
 
 function toggleDisplayOn(columns) {
     for (column of columns) {
@@ -87,8 +85,7 @@ function cycleAnalogueDisplay() {
     }, 9000);
     setTimeout(() => {
         toggleDisplayOff(cycleFour);
-    }, 12000);
-    
+    }, 12000);    
 }
 
 createAnalogueDisplay();
